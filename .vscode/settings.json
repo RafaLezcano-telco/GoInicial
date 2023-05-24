@@ -1,5 +1,12 @@
 {
   "go.autocompleteUnimportedPackages": true,
   "go.formatTool": "default",
-  "editor.formatOnSaveMode": "file"
+  "editor.formatOnSaveMode": "file",
+  "[go]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    }
+  },
+  "go.formatTool": "gofmt"
 }
