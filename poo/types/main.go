@@ -17,7 +17,16 @@ type newCourse course
 
 type newBool bool
 
+func (b newBool) String() string{
+	if b{
+		return "Verdadero"
+	}
+	return "Falso"
+}
+
 func main(){
-	c:=newCourse{name:"Go"}
-	fmt.Printf("El tipo es: %T\n",c)
+	//c:=newCourse{name:"Go"}
+	//fmt.Printf("El tipo es: %T\n",c)
+	var b newBool=false
+	fmt.Println(b.String())
 }

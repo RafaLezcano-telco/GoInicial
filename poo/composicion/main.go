@@ -13,11 +13,11 @@ func main() {
 			"Colombia", 
 			"Popayan",
 		customer.New("Alejandro","Cordoba2342", "123344"),
-		[]invoiceItem.Item{
+			invoiceItem.NewItems(
 			invoiceItem.New(1,"Curso Go",12.32),
 			invoiceItem.New(1,"Curso c#",1.32),
 			invoiceItem.New(1,"Curso js",126.4),
-		},
+		),
 	)
 
 	i.SetTotal()
