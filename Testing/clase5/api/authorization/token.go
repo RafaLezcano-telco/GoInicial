@@ -4,7 +4,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/EDteam/golang-testing/clase5/api/model"
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/model"
 	"github.com/dgrijalva/jwt-go"
 )
 

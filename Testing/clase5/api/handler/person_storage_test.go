@@ -3,41 +3,41 @@ package handler
 import (
 	"errors"
 
-	"github.com/EDteam/golang-testing/clase5/api/model"
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/model"
 )
 
-type PersonStorageOKMock struct{}
+type StorageMockOk struct{}
 
-func (psm *PersonStorageOKMock) Create(person *model.Person) error {
+func (psm *StorageMockOk) Create(person *model.Person) error {
 	return nil
 }
-func (psm *PersonStorageOKMock) Update(ID int, person *model.Person) error {
+func (psm *StorageMockOk) Update(ID int, person *model.Person) error {
 	return nil
 }
-func (psm *PersonStorageOKMock) Delete(ID int) error {
+func (psm *StorageMockOk) Delete(ID int) error {
 	return nil
 }
-func (psm *PersonStorageOKMock) GetByID(ID int) (model.Person, error) {
+func (psm *StorageMockOk) GetByID(ID int) (model.Person, error) {
 	return model.Person{}, nil
 }
-func (psm *PersonStorageOKMock) GetAll() (model.Persons, error) {
+func (psm *StorageMockOk) GetAll() (model.Persons, error) {
 	return nil, nil
 }
 
-type PersonStorageWrongMock struct{}
+type StorageMockError struct{}
 
-func (psm *PersonStorageWrongMock) Create(person *model.Person) error {
+func (psm *StorageMockError) Create(person *model.Person) error {
 	return errors.New("error")
 }
-func (psm *PersonStorageWrongMock) Update(ID int, person *model.Person) error {
+func (psm *StorageMockError) Update(ID int, person *model.Person) error {
 	return errors.New("error")
 }
-func (psm *PersonStorageWrongMock) Delete(ID int) error {
+func (psm *StorageMockError) Delete(ID int) error {
 	return errors.New("error")
 }
-func (psm *PersonStorageWrongMock) GetByID(ID int) (model.Person, error) {
+func (psm *StorageMockError) GetByID(ID int) (model.Person, error) {
 	return model.Person{}, errors.New("error")
 }
-func (psm *PersonStorageWrongMock) GetAll() (model.Persons, error) {
+func (psm *StorageMockError) GetAll() (model.Persons, error) {
 	return nil, errors.New("error")
 }

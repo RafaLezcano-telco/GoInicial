@@ -6,10 +6,11 @@ import (
 	"net/http"
 	"net/http/httptest"
 	"testing"
+	
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/handler"
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/model"
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/storage"
 
-	"github.com/EDteam/golang-testing/clase5/api/handler"
-	"github.com/EDteam/golang-testing/clase5/api/model"
-	"github.com/EDteam/golang-testing/clase5/api/storage"
 	"github.com/labstack/echo"
 )
 

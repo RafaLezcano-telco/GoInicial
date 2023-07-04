@@ -4,9 +4,10 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/authorization"
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/model"
 
-	"github.com/EDteam/golang-testing/clase5/api/authorization"
-	"github.com/EDteam/golang-testing/clase5/api/model"
+
 )
 
 type login struct {

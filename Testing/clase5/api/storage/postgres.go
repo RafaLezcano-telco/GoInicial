@@ -4,11 +4,8 @@ import (
 	"database/sql"
 	"errors"
 	"log"
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/model"
 
-	// Import pq library
-	"github.com/lib/pq"
-
-	"github.com/EDteam/golang-testing/clase5/api/model"
 )
 
 // Psql .

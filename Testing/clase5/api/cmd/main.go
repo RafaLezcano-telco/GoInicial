@@ -5,10 +5,10 @@ import (
 
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/authorization"
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/handler"
+	"github.com/RafaLezcano-telco/GoInicial/Testing/clase5/api/storage"
 
-	"github.com/EDteam/golang-api/clase-7/authorization"
-	"github.com/EDteam/golang-api/clase-7/handler"
-	"github.com/EDteam/golang-api/clase-7/storage"
 )
 
 func main() {
