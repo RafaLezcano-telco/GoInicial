@@ -21,7 +21,7 @@ func (psm *StorageMockOk) GetByID(ID int) (model.Person, error) {
 	return model.Person{}, nil
 }
 func (psm *StorageMockOk) GetAll() (model.Persons, error) {
-	return nil, nil
+	return model.Persons{}, nil
 }
 
 type StorageMockError struct{}
